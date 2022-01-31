@@ -4,7 +4,6 @@ repos=$(ssh dream920 find /volume1/gitserver/ -name "*.git")
 for i in $repos
 do
   lrepo=${i//gitserver/gitmirror}
-# echo $i $lrepo
   p=${lrepo//\/volume1\/gitmirror\/}
   p=${p%/*}
   if [ ! -d $lrepo ]; then
