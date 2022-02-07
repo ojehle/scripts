@@ -3,9 +3,7 @@
 <plist version=”1.0″>
 <dict>
 <key>Label</key>
-<string>com.company.google.softwareupdatecheck</string>
-<key>LimitLoadToSessionType</key>
-<string>Aqua</string>
+<string>com.google.softwareupdatecheck</string>
 <key>ProgramArguments</key>
 <array>
 <string>/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/MacOS/GoogleSoftwareUpdateAgent</string>
@@ -19,5 +17,9 @@
 <true/>
 <key>StartInterval</key>
 <integer>28800</integer>
+<key>StandardOutPath</key>
+<string>/tmp/google_softwareupdate.log</string>
+<key>StandardErrPath</key>
+<string>/tmp/google_softwareupdate.log</string>
 </dict>
 </plist>
