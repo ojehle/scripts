@@ -11,12 +11,12 @@
 <key>RunAtLoad</key>
 <true/>
 <key>StartInterval</key>
-<integer>14400</integer>
+<integer>300</integer>
 <key>StandardOutPath</key>
 <string>/tmp/google_softwareupdate.log</string>
 <key>StandardErrPath</key>
-<string>/tmp/google_softwareupdate.log</string>
-<key>SuccessfullExit</key
+<string>/tmp/google_softwareupdate.err</string>
+<key>SuccessfullExit</key>
 <true/>
 </dict>
 </plist>
