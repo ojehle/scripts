@@ -29,4 +29,4 @@ else
   git remote set-url --add all git@github.com:ojehle/$repo
   git remote set-url --add all git@gitlab.com:ojehle/$repo
 fi
-
+git push all
