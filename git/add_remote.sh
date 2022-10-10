@@ -13,11 +13,11 @@ if git remote -v |  grep  gitlab; then
   echo gitlab ok
 else
   echo gitlab nok
-  git remote add git@gitlab.com:ojehle/$repo
+  git remote add gitlab git@gitlab.com:ojehle/$repo
 fi
 if git remote -v |  grep  github; then
   echo github ok
 else
-  git remote add git@github.com:ojehle/$repo
+  git remote add github git@github.com:ojehle/$repo
   echo github nok
 fi
