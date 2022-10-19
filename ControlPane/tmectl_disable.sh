@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo /usr/local/bin/tmectl $1
+sudo /usr/local/bin/tmectl disable
