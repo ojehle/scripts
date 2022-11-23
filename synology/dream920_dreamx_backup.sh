@@ -11,6 +11,7 @@ do
 done
 sleep 10
 cd /volume1/
+ssh dreamx sudo snapper -c data_backup cleanup timeline
 ssh dreamx sudo snapper -c data_backup create 
 rsync -azq --exclude ".snapshots" --exclude '*#snapshot*' --exclude '*@eaDir*' --exclude '*#recycle*' --delete /volume1/Calibre* dreamx:/data/backup/
 for i in H35 OJ books gitserver_backup subversion_backup docker_backup 
