@@ -10,7 +10,7 @@ for i in $services
 do
   launchctl stop $i
 done
-rsync --dry-run -av dream920:/volume1/MacPhoto/* /Users/oj/Pictures/
+rsync -av dream920:/volume1/MacPhoto/* /Users/oj/Pictures/
 for i in $services
 do
   launchctl start  $i
