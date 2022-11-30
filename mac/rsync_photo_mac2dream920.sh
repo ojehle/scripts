@@ -1,7 +1,9 @@
 #!/bin/bash
 
 h=$(hostname -s)
-if [ "$h" != "LuftikusNG" ]; then
+if [ "$h" = "LuftikusNG" -o "$h" = "LuftikusNG-WLAN" ]; then
+  x=1
+else
   echo "wrong host"
   exit 1
 fi
