@@ -22,10 +22,17 @@ else
   echo github nok
 fi
 
+dreamurl=$(git remote -v | grep fetch | grep  git-oj@dream920:/volume1/gitserver/ | sort -u |awk '{print $2}' )
+dreamurl=${dreamurl//git-oj@/}
+
 if git remote -v |  grep  all; then
   echo all ok
 else
-  git remote add all dream920:/volume1/gitserver/oj/$repo
+  if [ -z "$dreamurl" ]; then
+    git remote add all dream920:/volume1/gitserver/oj/$repo
+  else 
+    git remote add all $dreamurl
+  fi 
   git remote set-url --add all git@github.com:ojehle/$repo
   git remote set-url --add all git@gitlab.com:ojehle/$repo
 fi
